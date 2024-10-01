@@ -1,14 +1,14 @@
 local option = {
     log_level = "Info",
-    parallel = 4,
+    parallel = 8, -- 8 or 12 for 4 cpu edgw
     call_timeout = "1000ms",
     batch_size = "Auto",
     -- duration = "1s",
     -- target_rps = 1,
     -- log_requests = true,
     -- log_responses = true,
-    duration = "10s",
-    target_rps = 60000,
+    duration = "300s",
+    target_rps = 2500,
     log_requests = false,
     log_responses = false,
     protocol = "Diameter",
@@ -69,6 +69,7 @@ local option = {
                 avps = {
                     { name = "Origin-Host", value = "host.example.com" },
                     { name = "Origin-Realm", value = "realm.example.com" },
+                    { name = "Destination-Realm", value = "dest.realm.org" },
                     { name = "Product-Name", value = "Petrel" },
                     { name = "Session-Id", value = "ses;${COUNTER}_${RANDOM}" },
                     { name = "Auth-Application-Id", value = "4" },
@@ -117,6 +118,7 @@ local option = {
                 avps = {
                     { name = "Origin-Host", value = "host.example.com" },
                     { name = "Origin-Realm", value = "realm.example.com" },
+                    { name = "Destination-Realm", value = "dest.realm.org" },
                     { name = "Product-Name", value = "Petrel" },
                     { name = "Session-Id", value = "ses;${COUNTER}_${RANDOM}" },
                     { name = "Auth-Application-Id", value = "4" },
@@ -165,6 +167,7 @@ local option = {
                 avps = {
                     { name = "Origin-Host", value = "host.example.com" },
                     { name = "Origin-Realm", value = "realm.example.com" },
+                    { name = "Destination-Realm", value = "dest.realm.org" },
                     { name = "Product-Name", value = "Petrel" },
                     { name = "Session-Id", value = "ses;${COUNTER}_${RANDOM}" },
                     { name = "Auth-Application-Id", value = "4" },
