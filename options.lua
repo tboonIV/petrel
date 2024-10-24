@@ -1,6 +1,6 @@
 local option = {
     log_level = "Info",
-    parallel = 8, -- 8 or 12 for 4 cpu edgw
+    parallel = 12, -- 8 or 12 for 4 cpu edgw
     call_timeout = "1000ms",
     batch_size = "Auto",
     -- duration = "1s",
@@ -8,7 +8,7 @@ local option = {
     -- log_requests = true,
     -- log_responses = true,
     duration = "300s",
-    target_rps = 2500,
+    target_rps = 3000,
     log_requests = false,
     log_responses = false,
     protocol = "Diameter",
