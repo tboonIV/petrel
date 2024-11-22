@@ -1,14 +1,14 @@
 local option = {
     log_level = "Info",
-    parallel = 4,
+    parallel = 8,
     call_timeout = "1000ms",
     batch_size = "Auto",
     -- duration = "1s",
     -- target_rps = 1,
     -- log_requests = true,
     -- log_responses = true,
-    duration = "10s",
-    target_rps = 60000,
+    duration = "300s",
+    target_rps = 2500,
     log_requests = false,
     log_responses = false,
     protocol = "Diameter",
@@ -89,6 +89,7 @@ local option = {
                                 value = {
                                     { name = "Called-Station-Id", value = "10999" },
                                     -- { name = "TGPP-MS-TimeZone", value = "0" },
+                                    { name = "SGSN-Address", value = "127.0.0.1" }
                                 },
                             }
                         },
@@ -137,6 +138,7 @@ local option = {
                                 value = {
                                     { name = "Called-Station-Id", value = "10999" },
                                     -- { name = "TGPP-MS-TimeZone", value = "0" },
+                                    { name = "SGSN-Address", value = "127.0.0.1" }
                                 },
                             }
                         },
@@ -185,6 +187,7 @@ local option = {
                                 value = {
                                     { name = "Called-Station-Id", value = "10999" },
                                     -- { name = "TGPP-MS-TimeZone", value = "0" },
+                                    { name = "SGSN-Address", value = "127.0.0.1" }
                                 },
                             }
                         },
